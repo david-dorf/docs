@@ -22,7 +22,7 @@ jobs:
         sudo ./aws/install --update &&
         aws --version
     - name: Run nightly upload
-      run: cd tools && ./build_docs.sh all
+      run: cd tools && ./build_docs.sh harmonic
       shell: bash
       env:
         GZ_VERSION_PASSWORD: ${{ secrets.GZ_VERSION_PASSWORD }}
