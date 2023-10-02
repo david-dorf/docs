@@ -30,7 +30,7 @@ echo ::group::Upload documentation
 if [[ ! -z "$4" && "$4" != "n" ]]; then
   # Upload documentation
   echo -e "\e[46m\e[30mUploading documentation for $3...\e[0m\e[39m"
-  sh upload_doc.sh $4
+  sh upload_doc.sh $4 > /dev/null
   echo -e "\e[46m\e[30mUploaded documentation for $3\e[0m\e[39m"
   echo ::endgroup::
 
